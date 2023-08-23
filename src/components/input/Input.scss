@@ -1,0 +1,43 @@
+@import "../../index.scss";
+
+.input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 0;
+
+    .input-container__input {
+        flex: 2;
+        width: 100%;
+        height: 40px;
+        border: 2px solid $text-100;
+        outline: none;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        padding: 0 1rem;
+        font-family: $font-subtitle;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .input-container__button {
+        flex: 0.5;
+        height: 40px;
+        width: 100%;
+        border: none;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: $font-subtitle;
+        border: 2px solid $text-100;
+        background: transparent;
+        cursor: pointer;
+        transition: 0.3s all ease;
+
+        &:hover {
+            background: $accent-100;
+        }
+    }
+}
